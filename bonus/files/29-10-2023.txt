@@ -1,0 +1,4 @@
+Rating = 9
+thoughts = ok
+opinion = good
+
