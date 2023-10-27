@@ -7,24 +7,24 @@ while True:
         case 'add':
             todo = input("Enter a todo: ") + '\n'
 
-            file = open('files/todo output.txt', 'r')
+            file = open('../bonus/files/todo output.txt', 'r')
             todos = file.readlines()
             file.close()
 
             todos.append(todo)
 
-            file = open('files/todo output.txt', 'w')
+            file = open('../bonus/files/todo output.txt', 'w')
             file.writelines(todos)
             file.close()
         case 'show':
-            file = open('files/todo output.txt', 'r')
+            file = open('../bonus/files/todo output.txt', 'r')
             todos = file.readlines()
             file.close()
 
             # new_todos = [(item.strip('\n'))for item in todos]
 
             for index, item in enumerate(todos):
-                item = item.strip('\n')
+
                 row = f"{index + 1}-{item}"
                 print(row)
         case 'edit':
