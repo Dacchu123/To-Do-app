@@ -4,7 +4,6 @@ import functions
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
     user_action = user_action.strip()
-    print("Hello")
 
     if user_action.startswith("add"):
         todo = (user_action[4:] + '\n')
